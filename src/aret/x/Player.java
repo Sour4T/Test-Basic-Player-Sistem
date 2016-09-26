@@ -3,9 +3,10 @@ package aret.x;
 public class Player {
 	private String Jugador;
 	private int ID ;
-	public Player(String Nombre, int id){
-		this.Jugador = Nombre;
-		this.ID = id;
+	
+	public Player(String name){
+		this.Jugador = name;
+		this.ID = ID;
 	}
 	
 	public void JugadorChangeName(String Jugador){
@@ -22,6 +23,9 @@ public class Player {
 		return Jugador;
 	}
 	
+	public void setID(int id){
+		this.ID = id;}
+	
 	public int ReturnID(){
 		return ID;
 	}
@@ -33,30 +37,6 @@ public class Player {
 	}
 	
 	
-public class Turno {
-		public int Turno;
-		private String CurrentPlayerTurno;
-	
-	
-		public Turno(String jugador, int Turno){
-			this.CurrentPlayerTurno = jugador;
-			this.Turno = Turno;}
-		
-		 public int ReturnTurno(){
-			 return this.Turno;}
-		 
-		 public int ReturnTurno(boolean opt){
-			 if (opt==true) {
-				System.out.println(Turno);}
-			 return this.Turno;}
-		 
-		 public void AddTurno(){
-			 this.Turno += 1;}
-		 
-		public void AddTurno(int TurnoEspecifico){
-			this.Turno += TurnoEspecifico;}
-		
-		}
 	}
 
 
